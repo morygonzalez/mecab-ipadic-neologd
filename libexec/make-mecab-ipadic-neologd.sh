@@ -95,7 +95,7 @@ if [ ! -e ${BASEDIR}/../build/${ORG_DIC_NAME}.tar.gz ]; then
             continue 1
 	fi
 	TMP_IPADIC_HASH_VAL=`openssl sha1 ${BASEDIR}/../build/${ORG_DIC_NAME}.tar.gz | cut -d $' ' -f 2,2 | xargs`
-        if [ "${TMP_IPADIC_HASH_VAL}" != "0d9d021853ba4bb4adfa782ea450e55bfe1a229b" ]; then
+        if [ "${TMP_IPADIC_HASH_VAL}" != "8ae530e264568d4ce57055d6e576978bedfe3a5d" ]; then
             echo ""
             echo "Hash value of ${BASEDIR}/../build/${ORG_DIC_NAME}.tar.gz"
             echo "    '${TMP_IPADIC_HASH_VAL}' != '0d9d021853ba4bb4adfa782ea450e55bfe1a229b'"
